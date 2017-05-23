@@ -26,3 +26,304 @@ Stack Trace:
 #15 {main}
 
 
+2017-05-23 08:03:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Pages could not be found.
+Exception Attributes: array (
+  'class' => 'Pages',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#15 {main}
+
+
+2017-05-23 08:03:19 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->_getViewFileName('Users\\index')
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-05-23 08:03:48 Error: [ParseError] syntax error, unexpected '=' in D:\Program File\Ampps\www\ramadhan\src\Controller\UsersController.php on line 11
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Use...', 'App')
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(68): Cake\Core\App::className('Users', 'Controller', 'Controller')
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-05-23 08:04:05 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->_getViewFileName('Users\\index')
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-05-23 08:04:09 Error: [Cake\View\Exception\MissingTemplateException] Template file "Users\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users\\index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(592): Cake\View\View->_getViewFileName('Users\\index')
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#17 {main}
+
+
+2017-05-23 08:10:33 Error: [ParseError] syntax error, unexpected '<', expecting end of file in D:\Program File\Ampps\www\ramadhan\src\Template\Users\index.ctp on line 2
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(972): Cake\View\View->_evaluate('D:\\Program File...', Array)
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(596): Cake\View\View->_render('D:\\Program File...')
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-23 08:30:53 Error: [ParseError] syntax error, unexpected ']', expecting ',' or ')' in D:\Program File\Ampps\www\ramadhan\src\Controller\UsersController.php on line 15
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\Program File...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Controller\\...')
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Controller\\Use...', 'App')
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(68): Cake\Core\App::className('Users', 'Controller', 'Controller')
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#20 {main}
+
+
+2017-05-23 08:31:19 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in D:\Program File\Ampps\www\ramadhan\src\Template\Users\index.ctp on line 13
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(972): Cake\View\View->_evaluate('D:\\Program File...', Array)
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(596): Cake\View\View->_render('D:\\Program File...')
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-23 08:32:04 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in D:\Program File\Ampps\www\ramadhan\src\Template\Users\index.ctp on line 13
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(972): Cake\View\View->_evaluate('D:\\Program File...', Array)
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(596): Cake\View\View->_render('D:\\Program File...')
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-23 08:32:07 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in D:\Program File\Ampps\www\ramadhan\src\Template\Users\index.ctp on line 13
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(972): Cake\View\View->_evaluate('D:\\Program File...', Array)
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(596): Cake\View\View->_render('D:\\Program File...')
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-23 08:32:45 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in D:\Program File\Ampps\www\ramadhan\src\Template\Users\index.ctp on line 13
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(972): Cake\View\View->_evaluate('D:\\Program File...', Array)
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(596): Cake\View\View->_render('D:\\Program File...')
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
+2017-05-23 08:32:47 Error: [ParseError] syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file in D:\Program File\Ampps\www\ramadhan\src\Template\Users\index.ctp on line 13
+Request URL: /users
+Stack Trace:
+#0 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(972): Cake\View\View->_evaluate('D:\\Program File...', Array)
+#1 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\View\View.php(596): Cake\View\View->_render('D:\\Program File...')
+#2 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#5 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(92): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 D:\Program File\Ampps\www\ramadhan\vendor\cakephp\cakephp\src\Http\Server.php(80): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 D:\Program File\Ampps\www\ramadhan\webroot\index.php(37): Cake\Http\Server->run()
+#18 {main}
+
+
