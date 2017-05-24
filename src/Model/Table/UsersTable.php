@@ -15,6 +15,7 @@
             $this->setTable('users');
             $this->setDisplayField('name');
             $this->setPrimaryKey('id');
+            $this->addBehavior('Timestamp');
         }
     }
 
